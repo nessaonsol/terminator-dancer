@@ -1,0 +1,31 @@
+# Terminator-Dancer Runtime Configuration
+
+[runtime]
+compute_budget = 1_400_000
+max_transaction_size = 1232
+enable_fuzzing = true
+conformance_testing = true
+
+[bank]
+initial_lamports = 1_000_000_000_000  # 1 billion lamports
+rent_collection_enabled = true
+fee_rate_governor_enabled = true
+
+[logging]
+level = "info"
+enable_transaction_logs = true
+enable_execution_traces = true
+
+[performance]
+max_concurrent_transactions = 1000
+cache_size_mb = 512
+gc_threshold_mb = 1024
+
+[networking]
+max_connections = 1000
+connection_timeout_ms = 5000
+
+[testing]
+fuzz_iterations = 1000
+differential_testing = true
+property_testing = true 
