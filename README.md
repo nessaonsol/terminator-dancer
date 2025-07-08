@@ -1,6 +1,8 @@
-# �� Terminator-Dancer: Cryptographic Foundation for Solana Runtime
+# 🤖 Terminator-Dancer
 
-**A high-performance Solana-compatible runtime built on proven cryptographic primitives with performance that challenges industry standards.**
+## Cryptographic Foundation for Solana Runtime
+
+**A proof-of-concept Solana-compatible runtime built on demonstrating rapid development of production-quality cryptographic components.*
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/solana-labs/firedancer)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
@@ -8,72 +10,79 @@
 
 ## 🚀 Overview
 
-Terminator-Dancer represents the **cryptographic foundation** of a new lightweight Solana runtime. While not yet a complete validator, it implements the core cryptographic and transaction processing components needed for Solana compatibility with **real-world performance**.
+Terminator-Dancer demonstrates rapid iteration of the **cryptographic foundation** for a Solana-compatible runtime. It implements the core cryptographic primitives and transaction processing components, not yet a complete validator.
 
 ## ✨ Current Implementation Status
 
-### ✅ **Core Components**
-- **Ed25519 Signature Verification** - Using `ed25519-dalek` (same library as Solana)
-- **SHA256 Hashing** - Hardware-optimized cryptographic hashing
-- **Transaction Format Parsing** - Full Solana transaction deserialization
+### ✅ **Production-Ready Core Components**
+- **Ed25519 Signature Verification** - Using `ed25519-dalek` (same library as Solana mainnet)
+- **SHA256 Hashing** - Real cryptographic hashing with hardware optimization
+- **Transaction Format Parsing** - Full Solana transaction deserialization/serialization
 - **Program Derived Address (PDA) Generation** - Exact Solana algorithm implementation
 - **Instruction Processing** - Compatible instruction format handling
+- **Comprehensive Testing** - 17+ unit tests with fuzzing and conformance testing
 
-### 🚧 **Integration-Ready Components**
-- **Runtime Execution Engine** - Ready for Firedancer BPF VM integration
-- **Account Management** - Structured for distributed banking integration
+### 🚧 **Firedancer Integration-Ready Components**
+- **Runtime Execution Engine** - Structured for Firedancer BPF VM integration
+- **Account Management** - Prepared for distributed banking integration  
 - **Transaction Processing Pipeline** - Designed for high-throughput validation
+- **C Library Bindings** - Interface definitions ready for Firedancer linkage
 
-## 📊 Live Performance Benchmarks
+## 📊 Crypto Performance Demos
 
 ```
-🔐 Ed25519 Signature Verification:  4,424 ops/sec  (vs Bitcoin: ~3,000)
-🔢 SHA256 Hashing:                167,812 ops/sec  (vs Ethereum: ~50,000)
-🔑 PDA Derivation:                 16,451 ops/sec  (Solana-compatible)
-📦 Batch Verification:             4,116 ops/sec  (Multi-signature txns)
+🔐 Ed25519 Signature Verification:  ~4,400 ops/sec
+🔢 SHA256 Hashing:                ~170,000 ops/sec  
+🔑 PDA Derivation:                 ~16,000 ops/sec
+📦 Batch Verification:             ~4,100 ops/sec
 ```
 
-*Benchmarks run on production hardware - see `cargo bench` for your system*
+*Performance from `crypto_demo.rs` - run `cargo run --example crypto_demo` for live benchmarks*
 
 ## 🏗️ Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Terminator-Dancer                       │
+│                    Terminator-Dancer                        │
 ├─────────────────────────────────────────────────────────────┤
 │  Transaction Processing  │  Cryptographic Verification      │
-│  • Solana Format Parser │  • Ed25519 Signatures           │
-│  • Instruction Router   │  • SHA256 Merkle Proofs         │
-│  • Account Management   │  • PDA Generation                │
+│  • Solana Format Parser │  • Ed25519 Signatures             │
+│  • Instruction Router   │  • SHA256 Merkle Proofs           │
+│  • Account Management   │  • PDA Generation                 │
 ├─────────────────────────────────────────────────────────────┤
-│                Integration Layer (Ready)                   │
-│  • Firedancer BPF VM    │  • Consensus Engine             │
-│  • Network Protocol     │  • Storage Backend              │
+│              Firedancer Integration Layer                   │
+│              (Interfaces Ready for C Bindings)              │
+│  • BPF VM Integration   │  • Consensus Engine Hooks         │
+│  • Network Protocol     │  • Storage Backend Interface      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ## 🚀 Quick Start
 
 ```bash
-# Clone and test
+# Clone and test the foundation
 git clone https://github.com/vistara-labs/terminator-dancer
 cd terminator-dancer
 cargo test
 
-# Run live benchmarks
-cargo bench
-
-# Try the crypto demo
+# See live crypto performance  
 cargo run --example crypto_demo
+
+# Run the runtime demo
+cargo run --example demo
+
+# Benchmark with criterion (optional)
+cargo bench
 ```
 
 ## 🧪 Test Suite Status
 
 ```
-✅ All 17 tests passing
+✅ All core tests passing (17+ tests)
 ✅ Cryptographic conformance verified
-✅ Solana transaction compatibility confirmed
-✅ Performance benchmarks stable
+✅ Solana transaction compatibility confirmed  
+✅ Performance demos stable
+✅ Firedancer integration interfaces ready
 ```
 
 ## 🔮 Technical Foundation
