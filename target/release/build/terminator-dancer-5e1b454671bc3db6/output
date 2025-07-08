@@ -1,3 +1,0 @@
-cargo:rerun-if-changed=build.rs
-cargo:rustc-env=FIREDANCER_ROOT=../
-🔧 Build script completed - Firedancer integration ready for real implementation

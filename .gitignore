@@ -1,5 +1,8 @@
 # Build artifacts
-/target/
+target/*
+
+target/release/*
+
 Cargo.lock
 
 # IDE files

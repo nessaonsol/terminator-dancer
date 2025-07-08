@@ -6,10 +6,10 @@ use std::time::Instant;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("🔥 TERMINATOR-DANCER CRYPTO SHOWCASE 🔥");
-    println!("Real Cryptography & Solana Compatibility Demo");
-    println!("Built with AI + Firedancer Foundation");
-    println!("===========================================\n");
+    println!("🔥 TERMINATOR-DANCER CRYPTO VERIFICATION 🔥");
+    println!("Production-Grade Cryptography & Solana Compatibility");
+    println!("Built on Firedancer Foundation");
+    println!("==============================================\n");
 
     // Test 1: Real Ed25519 Signature Verification
     println!("🔐 TEST 1: Ed25519 Signature Verification");
@@ -19,7 +19,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let signing_key = SigningKey::generate(&mut csprng);
     let verifying_key = signing_key.verifying_key();
     
-    let message = b"Hello Anatoly! This is a real signature from Terminator-Dancer runtime!";
+    let message = b"This is a real cryptographic signature from Terminator-Dancer runtime!";
     let signature = signing_key.sign(message);
     
     println!("Message: {}", String::from_utf8_lossy(message));
@@ -201,8 +201,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("✅ Batch cryptographic operations");
     println!("✅ Transaction security and integrity");
     println!("\n🚀 Ready for production Solana workloads!");
-    println!("🤖 Built with AI-assisted development in record time!");
-    println!("🔥 Powered by Firedancer's high-performance foundation!");
+    println!("🤖 Built with AI-assisted development!");
+    println!("🔥 Powered by Firedancer's foundation!");
 
     Ok(())
 }
