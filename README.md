@@ -1,8 +1,6 @@
 # 🤖 Terminator-Dancer
 
-## Cryptographic Foundation for Solana Runtime
-
-**A proof-of-concept Solana-compatible runtime built on demonstrating rapid development of production-quality cryptographic components.*
+## High-Performance Solana Runtime Foundation
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/solana-labs/firedancer)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
@@ -10,7 +8,9 @@
 
 ## 🚀 Overview
 
-Terminator-Dancer demonstrates rapid iteration of the **cryptographic foundation** for a Solana-compatible runtime. It implements the core cryptographic primitives and transaction processing components, not yet a complete validator.
+Terminator-Dancer is a **lightweight, high-performance Solana runtime engine** built for rapid development and production deployment. It implements core transaction processing, account management, and cryptographic verification needed for Solana compatibility—demonstrating how modern tooling enables fast iteration on sophisticated blockchain infrastructure.
+
+**Key Focus:** Transaction processing engine with production-grade performance, not yet a complete validator.
 
 ## ✨ Current Implementation Status
 
